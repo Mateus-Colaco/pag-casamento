@@ -1,12 +1,7 @@
-/* Importação da fonte Nunito do Google Fonts, se não estiver já importada globalmente */
+
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
 
-/* NOTA: A fonte "PP HATTON ULTRALIGHT 200.otf" é um arquivo local.
-   Para que ela funcione em um ambiente web, você precisará hospedá-la e
-   declarar com @font-face no CSS. Exemplo:
 
-
-*/
 @font-face {
   font-family: 'PPHattonUltralight';
   src: url('/Fonts/PP HATTON ULTRALIGHT 200.otf') format('opentype');
@@ -60,10 +55,9 @@ header p.countdown {
 }
 
 main {
-    padding: 40px 0;
     display: flex;
     flex-wrap: wrap; 
-    justify-content: space-around;
+    justify-content: center;
     gap: 30px; 
 }
 
@@ -72,8 +66,8 @@ main {
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-    flex: 3; 
-    min-width: 300px; 
+    flex: 1; 
+    min-width: 250px; 
     text-align: center;
 }
 
@@ -93,7 +87,8 @@ main {
     margin-bottom: 15px;
 }
 
-.secao .link-presentes {
+.secao .link-presentes, 
+.secao .confirma-presenca{
     display: inline-block;
     background-color: #bb8de2;
     color: white;
@@ -104,7 +99,8 @@ main {
     transition: background-color 0.3s ease;
 }
 
-.secao .link-presentes:hover {
+.secao .link-presentes:hover,
+.secao .confirma-presenca:hover {
     background-color: #7c30bd;
     color: white
 }
@@ -118,7 +114,8 @@ main {
     flex-wrap: wrap;
 }
 
-.dados-pix strong {
+.dados-pix strong,
+.confirma-presenca strong {
     color: #555;
     margin-right: 5px;
 }
@@ -176,7 +173,6 @@ footer {
     cursor: default;
 }
 
-/* Responsividade */
 @media (max-width: 768px) {
     main {
         flex-direction: column;
