@@ -39,7 +39,6 @@ header img.foto-noivos {
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 20px;
-    border: 4px solid #bb8de2; /* Cor rosa claro, ajuste conforme preferir */
 }
 header h1 {
     /* Se a fonte personalizada for usada, descomente e ajuste o @font-face */
