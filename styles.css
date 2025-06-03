@@ -44,7 +44,7 @@ header img.foto-noivos {
 header h1 {
     /* Se a fonte personalizada for usada, descomente e ajuste o @font-face */
     /* font-family: 'PPHattonUltralight', cursive; */
-    font-family: 'Nunito', cursive; /* Fallback ou ajuste */
+    font-family: 'PPHattonUltralight', cursive; /* Fallback ou ajuste */
     font-weight: 200;
     margin: 10px 0;
     font-size: 2.5em;
