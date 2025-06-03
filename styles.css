@@ -22,17 +22,20 @@ body {
     color: #333;
     line-height: 1.6;
 }
+
 .container {
     max-width: 960px;
     margin: 20px auto;
     padding: 0 20px;
 }
+
 header {
     background-color: #fff;
     padding: 30px 20px;
     text-align: center;
     border-bottom: 1px solid #eee;
 }
+
 header img.foto-noivos {
     width: 200px;
     height: 200px;
@@ -40,54 +43,59 @@ header img.foto-noivos {
     object-fit: cover;
     margin-bottom: 20px;
 }
+
 header h1 {
-    /* Se a fonte personalizada for usada, descomente e ajuste o @font-face */
-    /* font-family: 'PPHattonUltralight', cursive; */
-    font-family: 'PPHattonUltralight', cursive; /* Fallback ou ajuste */
+    font-family: 'PPHattonUltralight', cursive; 
     font-weight: 200;
     margin: 10px 0;
     font-size: 2.5em;
     color: #c6a1e7;
 }
+
 header p.countdown {
     font-family: 'Nunito', sans-serif;
     font-size: 1.5em;
     color: #9583b6;
     font-weight: bold;
 }
+
 main {
     padding: 40px 0;
     display: flex;
-    flex-wrap: wrap; /* Para empilhar em telas menores */
+    flex-wrap: wrap; 
     justify-content: space-around;
-    gap: 30px; /* Espaçamento entre as seções */
+    gap: 30px; 
 }
+
 .secao {
     background-color: #fff;
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-    flex: 1; /* Para que as seções dividam o espaço */
-    min-width: 300px; /* Largura mínima antes de empilhar */
+    flex: 1; 
+    min-width: 300px; 
     text-align: center;
 }
+
 .secao h2 {
     font-family: 'Nunito', sans-serif;
-    color: #bb8de2; /* Cor rosa claro, ajuste conforme preferir */
+    color: #bb8de2; 
     margin-top: 0;
     font-size: 1.8em;
     border-bottom: 2px solid #f0f0f0;
     padding-bottom: 10px;
     margin-bottom: 20px;
 }
+
 .secao p {
     font-family: 'Nunito', sans-serif;
     font-size: 1.1em;
     margin-bottom: 15px;
 }
+
 .secao .link-presentes {
     display: inline-block;
-    background-color: #bb8de2; /* Cor rosa claro */
+    background-color: #bb8de2;
     color: white;
     padding: 12px 25px;
     text-decoration: none;
@@ -95,23 +103,26 @@ main {
     font-size: 1.1em;
     transition: background-color 0.3s ease;
 }
+
 .secao .link-presentes:hover {
-    background-color: #d98fa0; /* Tom mais escuro de rosa */
+    background-color: #7c30bd;
+    color: white
 }
 
 .dados-pix p {
     margin-bottom: 8px;
     font-size: 1em;
-    /* Para alinhar o texto e o botão de copiar */
     display: flex;
-    justify-content: center; /* Centraliza o conteúdo do <p> se for mais largo */
-    align-items: center; /* Alinha verticalmente os itens */
-    flex-wrap: wrap; /* Permite quebra de linha se o espaço for pouco */
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
+
 .dados-pix strong {
     color: #555;
-    margin-right: 5px; /* Espaço entre o label e o valor/botão */
+    margin-right: 5px;
 }
+
 .dados-pix .chave-pix-valor {
     font-weight: bold;
     font-size: 16px;
@@ -120,7 +131,7 @@ main {
     padding: 5px 7px;
     border-radius: 4px;
     display: inline-block;
-    margin-top: 5px; /* Mantido caso o flex-wrap quebre a linha */
+    margin-top: 5px;
 }
 
 footer {
@@ -132,6 +143,7 @@ footer {
     border-top: 1px solid #eee;
     margin-top: 40px;
 }
+
 .btn-copiar {
     font-family: 'Nunito', sans-serif;
     background-color: transparent;
@@ -142,29 +154,35 @@ footer {
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.2s ease;
-    margin-top: 5px; /* Para alinhar com a chave-pix se quebrar linha */
+    margin-top: 5px;
 }
+
 .btn-copiar:hover {
     color: #afafaf;
 }
+
 .btn-copiar:disabled {
     background-color: #d2d3d2;
     color: #5f5f5f;
     cursor: default;
 }
+
 /* Responsividade */
 @media (max-width: 768px) {
     main {
-        flex-direction: column; /* Empilha as seções */
+        flex-direction: column;
         align-items: center;
     }
+    
     .secao {
-        width: 90%; /* Ocupa mais largura em telas menores */
-        margin-bottom: 20px; /* Espaçamento quando empilhado */
+        width: 90%;
+        margin-bottom: 20px;
     }
+
     header h1 {
         font-size: 2em;
     }
+
     header p.countdown {
         font-size: 1.2em;
     }
